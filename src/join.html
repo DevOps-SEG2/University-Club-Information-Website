@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Join — University Clubs Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Page-specific FAQ styles */
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      border: 1px solid var(--blue-light);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 12px;
+    }
+    .faq-item h3 {
+      font-size: 1rem;
+      color: var(--blue-deep);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .faq-item h3::before {
+      content: 'Q';
+      background: var(--blue-accent);
+      color: white;
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 16px; top: 0; bottom: 0;
+      width: 2px;
+      background: var(--blue-mid);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 28px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -31px;
+      top: 6px;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--blue-accent);
+      border: 3px solid var(--white);
+      box-shadow: 0 0 0 2px var(--blue-accent);
+    }
+    .timeline-item h3 { color: var(--blue-deep); margin-bottom: 6px; }
+    .timeline-item p  { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header>
+    <nav>
+      <span class="nav-logo">🎓 UniClubs</span>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubs.html">Club Categories</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html" class="active">Join a Club</a></li>
+        <li><a href="highlights.html">Achievements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <h1>How to Join a Club</h1>
+    <p>Getting involved is simple. Follow these steps to register, attend your first meeting, and become an active member.</p>
+  </section>
+
+  <!-- ========== STEPS ========== -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Step by Step</span>
+        <h2>Your Path to Membership</h2>
+        <p>From browsing to participating — the entire process takes less than a week.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px;max-width:720px;margin:0 auto;">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Browse Available Clubs</h3>
+            <p>Visit the <a href="clubs.html">Club Categories</a> page and explore all clubs under Technology, Sports, Cultural, and Debate. Read each description and identify the clubs that match your interests and availability.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Visit the Student Affairs Office</h3>
+            <p>Head to the Student Affairs Office (Block A, Ground Floor) to collect the club membership registration form, or download it from the university student portal. Bring your student ID card.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Fill &amp; Submit the Registration Form</h3>
+            <p>Complete the membership form with your name, student ID, department, and preferred clubs. Submit it to the Student Affairs Office or email it to <strong>clubs@university.edu.pk</strong> along with your student ID scan.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Receive Confirmation &amp; Club Contact</h3>
+            <p>Within 3 working days, you will receive a confirmation email with the club representative's contact, meeting schedule, and your member ID number. Save these details.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <div>
+            <h3>Attend Your First Meeting</h3>
+            <p>Show up to your first scheduled club meeting. Introduce yourself, get to know other members, and understand the club's upcoming activities, goals, and participation expectations.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">6</div>
+          <div>
+            <h3>Stay Active &amp; Get Involved</h3>
+            <p>Maintain at least 70% attendance at club meetings. Participate in events and competitions. Members who show consistent dedication may be nominated for club leadership roles.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PARTICIPATION GUIDELINES ========== -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Guidelines</span>
+        <h2>Participation Guidelines</h2>
+        <p>All members are expected to follow the code of conduct and participation guidelines of their respective clubs.</p>
+      </div>
+
+      <div class="grid-2">
+
+        <div class="card">
+          <div class="card-icon">📋</div>
+          <h3>Attendance &amp; Commitment</h3>
+          <p>Members should attend at least 70% of scheduled meetings per semester. Notify your club representative in advance if you are unable to attend.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3>Respectful Conduct</h3>
+          <p>All members must treat fellow students, faculty, and guests with respect. Bullying, discrimination, or harassment of any kind will not be tolerated.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Active Participation</h3>
+          <p>Volunteer for events, contribute ideas in meetings, and take on roles that challenge you to grow. Passive membership is discouraged.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📢</div>
+          <h3>University Representation</h3>
+          <p>When representing the university in external events, all members must adhere to the university's code of conduct and dress code policies.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MEETING SCHEDULE ========== -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Schedule</span>
+        <h2>General Meeting Schedule</h2>
+        <p>Regular meeting times for each club category. Specific dates may vary — confirm with your club rep.</p>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>Club Category</th>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Venue</th>
+              <th>Frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Technology Clubs</td>
+              <td>Tuesday</td>
+              <td>4:00 PM</td>
+              <td>CS Lab, Room 101</td>
+              <td>Weekly</td>
+            </tr>
+            <tr>
+              <td>Sports Clubs</td>
+              <td>Wednesday &amp; Saturday</td>
+              <td>7:00 AM</td>
+              <td>University Sports Ground</td>
+              <td>Bi-weekly</td>
+            </tr>
+            <tr>
+              <td>Cultural Clubs</td>
+              <td>Thursday</td>
+              <td>3:00 PM</td>
+              <td>Arts Hall / Auditorium</td>
+              <td>Weekly</td>
+            </tr>
+            <tr>
+              <td>Debate Societies</td>
+              <td>Monday</td>
+              <td>5:00 PM</td>
+              <td>Seminar Hall B</td>
+              <td>Weekly</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">FAQs</span>
+        <h2>Common Questions</h2>
+      </div>
+
+      <div style="max-width:720px;margin:0 auto;">
+
+        <div class="faq-item">
+          <h3>Can I join more than one club?</h3>
+          <p>Yes — students may join up to two clubs simultaneously. Ensure your schedule allows for the commitment required by both clubs.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is there a membership fee?</h3>
+          <p>Most clubs are free to join. Some activity-based clubs (e.g., swimming, travel) may charge a small semester fee. Details are provided at registration.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can freshmen join in their first semester?</h3>
+          <p>Absolutely. First-year students are strongly encouraged to join clubs early. It is one of the best ways to settle into campus life and build your network.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I leave a club if I change my mind?</h3>
+          <p>Submit a written notice to your club representative and the Student Affairs Office at least two weeks before you intend to leave. No penalties apply for leaving at the start of a semester.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-strip">
+    <h2>Ready to Take the First Step?</h2>
+    <p>Browse our club categories and find your match — then register today.</p>
+    <a href="clubs.html" class="btn btn-primary">View Club Categories →</a>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">🎓 UniClubs Portal</span>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="highlights.html">Achievements</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 University Clubs Portal. Developed for DevOps Assignment 01 — Spring 2026.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
