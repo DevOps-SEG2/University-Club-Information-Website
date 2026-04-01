@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Club Achievements — University Clubs Portal</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <style>
+    /* Page-specific stat counter */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 0;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: var(--radius);
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .stat-box .number {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-box .label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.8);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .trophy-banner {
+      background: var(--blue-light);
+      border-radius: var(--radius);
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      border: 1px solid var(--blue-mid);
+    }
+    .trophy-banner .icon {
+      font-size: 3.5rem;
+      flex-shrink: 0;
+    }
+    .trophy-banner h3 { color: var(--blue-deep); margin-bottom: 6px; }
+    .trophy-banner .year-tag {
+      display: inline-block;
+      background: var(--blue-accent);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 50px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 760px) {
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .achievement-grid { grid-template-columns: 1fr; }
+      .trophy-banner { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header>
+    <nav>
+      <span class="nav-logo">🎓 UniClubs</span>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubs.html">Club Categories</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join a Club</a></li>
+        <li><a href="highlights.html" class="active">Achievements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HERO WITH STATS ========== -->
+  <section class="hero" style="padding-bottom:60px;">
+    <h1>Club Achievements &amp; Highlights</h1>
+    <p>Celebrating the wins, milestones, and moments that define our campus clubs community.</p>
+
+    <div class="stat-grid" style="max-width:860px;margin:40px auto 0;">
+      <div class="stat-box">
+        <div class="number">42+</div>
+        <div class="label">Trophies Won</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">18</div>
+        <div class="label">National Events</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">600+</div>
+        <div class="label">Active Members</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">9</div>
+        <div class="label">Active Clubs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MAJOR ACHIEVEMENTS ========== -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Hall of Fame</span>
+        <h2>Major Achievements</h2>
+        <p>These are the defining moments that put our university clubs on the national map.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:20px;">
+
+        <div class="trophy-banner">
+          <div class="icon">🏆</div>
+          <div>
+            <div class="year-tag">2025</div>
+            <h3>National Hackathon — 1st Place</h3>
+            <p>The App Development Club represented the university at the National Innovation Hackathon, competing against 80 universities across the country. The team built an AI-powered campus safety app and secured first place with a PKR 500,000 prize.</p>
+          </div>
+        </div>
+
+        <div class="trophy-banner">
+          <div class="icon">🥇</div>
+          <div>
+            <div class="year-tag">2025</div>
+            <h3>Inter-University Debate Championship — Champions</h3>
+            <p>The Parliamentary Debate Society brought home the national championship title for the second consecutive year, with three members qualifying for the international WUDC competition in Seoul.</p>
+          </div>
+        </div>
+
+        <div class="trophy-banner">
+          <div class="icon">⚽</div>
+          <div>
+            <div class="year-tag">2024</div>
+            <h3>University Football League — Regional Champions</h3>
+            <p>The Football Club went unbeaten across the regional circuit with a 9-0 win-loss record. Captain Bilal Tariq was awarded Best Player of the Tournament and signed a trial with a national-level club.</p>
+          </div>
+        </div>
+
+        <div class="trophy-banner">
+          <div class="icon">🔐</div>
+          <div>
+            <div class="year-tag">2024</div>
+            <h3>National CTF Competition — 2nd Place</h3>
+            <p>The Cybersecurity Society placed second in the 48-hour national Capture The Flag competition, competing against 120 university teams. The team is now partnered with a leading cybersecurity firm for internship placements.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOTABLE MEMBER ACCOMPLISHMENTS ========== -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Member Spotlight</span>
+        <h2>Notable Member Accomplishments</h2>
+        <p>Individual excellence that reflects the quality of talent within our clubs.</p>
+      </div>
+
+      <div class="achievement-grid">
+
+        <div class="highlight-card">
+          <div class="year">Technology — 2025</div>
+          <h3>Sara Ahmed — Published ML Research</h3>
+          <p>AI Club member Sara Ahmed co-authored a research paper on federated learning, published in an IEEE-indexed journal during her second year. She credits the club's project environment for developing her research mindset.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="year">Debate — 2025</div>
+          <h3>Omar Farooq — Best Speaker Award</h3>
+          <p>Debate Society member Omar Farooq was awarded Best Speaker at the South Asian University Debate Forum held in Lahore, competing against 200+ debaters from 8 countries.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="year">Cultural — 2024</div>
+          <h3>Ayesha Malik — National Art Prize</h3>
+          <p>Fine Arts Society member Ayesha Malik won the HEC National Student Art Award for her mixed-media installation exploring the theme of digital identity and cultural memory.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="year">Sports — 2024</div>
+          <h3>Hamza Raza — Selected for Provincial Team</h3>
+          <p>Badminton Club's Hamza Raza was selected to represent his province in the National Universities Games after consistent performance in inter-university circuits.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SUCCESSFUL EVENTS ========== -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Events Impact</span>
+        <h2>Successfully Organized Events</h2>
+        <p>Our clubs don't just participate — they lead. Here are events our students built from the ground up.</p>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="card">
+          <div class="card-icon">🎪</div>
+          <h3>TechXpo 2025</h3>
+          <p>Organized by the Technology Clubs, this annual expo attracted 1,200 visitors, 30 project stalls, and partnerships with 5 tech companies for on-spot internship interviews.</p>
+          <span class="badge">1,200+ Attendees</span>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🌍</div>
+          <h3>World Cultural Festival</h3>
+          <p>Hosted by the Languages & Culture Exchange Club, this two-day festival featured 16 country pavilions, live performances, and a food fair drawing students from across the city.</p>
+          <span class="badge">16 Countries</span>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Career Readiness Summit</h3>
+          <p>A joint initiative by the Debate Society and AI Club bringing 12 industry speakers and mock interview sessions that helped over 200 students land internships and job offers.</p>
+          <span class="badge">200+ Placed</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-strip">
+    <h2>Write Your Own Chapter</h2>
+    <p>Every trophy, every stage, every breakthrough started with a student who decided to show up. Be that student.</p>
+    <a href="join.html" class="btn btn-primary">Join a Club Today →</a>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">🎓 UniClubs Portal</span>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="highlights.html">Achievements</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 University Clubs Portal. Developed for DevOps Assignment 01 — Spring 2026.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
