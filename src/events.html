@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upcoming Events — University Clubs Portal</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <style>
+    /* Page-specific styles */
+    .event-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 0;
+
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      border: 1px solid var(--blue-light);
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .event-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .event-date-bar {
+      background: var(--blue-deep);
+      color: var(--white);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .event-date-bar .day {
+      font-size: 2rem;
+      font-family: var(--font-display);
+      font-weight: 700;
+      line-height: 1;
+    }
+    .event-date-bar .month-year {
+      font-size: 0.82rem;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
+    }
+    .event-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .event-body h3 { color: var(--blue-deep); margin-bottom: 8px; }
+    .event-body p  { flex: 1; }
+    .event-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+      font-size: 0.82rem;
+      color: var(--grey-dark);
+    }
+    .event-meta span { display: flex; align-items: center; gap: 5px; }
+
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .filter-btn {
+      padding: 8px 20px;
+      border-radius: 50px;
+      border: 2px solid var(--blue-mid);
+      background: transparent;
+      color: var(--blue-deep);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+      font-family: var(--font-body);
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--blue-accent);
+      border-color: var(--blue-accent);
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header>
+    <nav>
+      <span class="nav-logo">🎓 UniClubs</span>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubs.html">Club Categories</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="join.html">Join a Club</a></li>
+        <li><a href="highlights.html">Achievements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <h1>Upcoming Events</h1>
+    <p>Workshops, competitions, cultural nights, and more — never miss what's happening on campus.</p>
+  </section>
+
+  <!-- ========== EVENTS GRID ========== -->
+  <section class="bg-white">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="label">Spring 2026</span>
+        <h2>What's Coming Up</h2>
+        <p>Explore events organized by your fellow students across all club categories.</p>
+      </div>
+
+      <!-- Filter Buttons (visual only) -->
+      <div class="filter-bar">
+        <button class="filter-btn active">All Events</button>
+        <button class="filter-btn">Technology</button>
+        <button class="filter-btn">Sports</button>
+        <button class="filter-btn">Cultural</button>
+        <button class="filter-btn">Debate</button>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="event-card">
+          <div class="event-date-bar">
+            <div>
+              <div class="day">12</div>
+              <div class="month-year">April 2026</div>
+            </div>
+            <span class="badge" style="background:rgba(255,255,255,0.2);color:#fff;">Technology</span>
+          </div>
+          <div class="event-body">
+            <h3>National Hackathon Qualifier</h3>
+            <p>Build a working prototype in 24 hours. Teams of up to 4 students. Cash prizes and direct entry to the national finals.</p>
+            <div class="event-meta">
+              <span>🕘 9:00 AM — 9:00 AM+1</span>
+              <span>📍 CS Lab Block</span>
+              <span>👥 Open to All</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-bar">
+            <div>
+              <div class="day">18</div>
+              <div class="month-year">April 2026</div>
+            </div>
+            <span class="badge" style="background:rgba(255,255,255,0.2);color:#fff;">Cultural</span>
+          </div>
+          <div class="event-body">
+            <h3>International Cultural Night</h3>
+            <p>A celebration of heritage, food, music, and dance representing over 15 countries. Costumes encouraged!</p>
+            <div class="event-meta">
+              <span>🕖 6:00 PM</span>
+              <span>📍 Main Auditorium</span>
+              <span>🎟 Free Entry</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-bar">
+            <div>
+              <div class="day">22</div>
+              <div class="month-year">April 2026</div>
+            </div>
+            <span class="badge" style="background:rgba(255,255,255,0.2);color:#fff;">Debate</span>
+          </div>
+          <div class="event-body">
+            <h3>Spring Debate Championship</h3>
+            <p>British Parliamentary format. Motion announced 24 hours before the event. Open to registered debaters only.</p>
+            <div class="event-meta">
+              <span>🕑 2:00 PM</span>
+              <span>📍 Seminar Hall B</span>
+              <span>📋 Registration Required</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-bar">
+            <div>
+              <div class="day">26</div>
+              <div class="month-year">April 2026</div>
+            </div>
+            <span class="badge" style="background:rgba(255,255,255,0.2);color:#fff;">Sports</span>
+          </div>
+          <div class="event-body">
+            <h3>Inter-University Football Tournament</h3>
+            <p>5 universities compete in a round-robin format. Finals on the same day. Come support your team!</p>
+            <div class="event-meta">
+              <span>🕙 10:00 AM</span>
+              <span>📍 University Stadium</span>
+              <span>🆓 Free for Students</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-bar">
+            <div>
+              <div class="day">05</div>
+              <div class="month-year">May 2026</div>
+            </div>
+            <span class="badge" style="background:rgba(255,255,255,0.2);color:#fff;">Technology</span>
+          </div>
+          <div class="event-body">
+            <h3>AI Workshop: Intro to Prompt Engineering</h3>
+            <p>Hands-on workshop by the AI Club covering LLMs, prompt design, and real-world use cases. Laptops required.</p>
+            <div class="event-meta">
+              <span>🕑 2:00 PM — 5:00 PM</span>
+              <span>📍 Room 204, IT Building</span>
+              <span>🎟 Register Online</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-bar">
+            <div>
+              <div class="day">14</div>
+              <div class="month-year">May 2026</div>
+            </div>
+            <span class="badge" style="background:rgba(255,255,255,0.2);color:#fff;">Cultural</span>
+          </div>
+          <div class="event-body">
+            <h3>End-of-Semester Arts Exhibition</h3>
+            <p>Showcasing paintings, digital art, and installations created by Fine Arts Society members throughout the semester.</p>
+            <div class="event-meta">
+              <span>🕙 11:00 AM — 6:00 PM</span>
+              <span>📍 Gallery Hall</span>
+              <span>👐 Open to Public</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALENDAR NOTE ========== -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Stay Updated</span>
+        <h2>Never Miss an Event</h2>
+        <p>Follow us on campus notice boards or speak to your club representative to stay informed.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card text-center">
+          <div class="card-icon" style="margin:0 auto 16px;">📌</div>
+          <h3>Campus Notice Boards</h3>
+          <p>All events are posted on the main campus board outside the student affairs office.</p>
+        </div>
+        <div class="card text-center">
+          <div class="card-icon" style="margin:0 auto 16px;">📧</div>
+          <h3>University Email</h3>
+          <p>Weekly event digests are sent to all enrolled students every Monday morning.</p>
+        </div>
+        <div class="card text-center">
+          <div class="card-icon" style="margin:0 auto 16px;">🗣</div>
+          <h3>Club Representatives</h3>
+          <p>Each club has a designated rep who can answer event-related queries directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-strip">
+    <h2>Want to Organize an Event?</h2>
+    <p>Any registered club can apply to host campus events. Speak to the Student Affairs Office for guidelines.</p>
+    <a href="join.html" class="btn btn-primary">Join a Club First →</a>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">🎓 UniClubs Portal</span>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="highlights.html">Achievements</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 University Clubs Portal. Developed for DevOps Assignment 01 — Spring 2026.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
